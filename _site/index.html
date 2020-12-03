@@ -30,7 +30,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfSFABHaSPv4gwdqCiKkNFSxAUFyPgXMO2v13yebCncI1_ZRA/viewform?usp=pp_url">募集はこちらから！！</a></div>
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -38,20 +38,29 @@
         <div class="home"><h1>ボランティア募集ページ</h1>
 <h2 class="post-list-heading">一覧</h2>
     <ul class="post-list"><li><span class="post-meta">Nov 4, 2020</span>
-        <h3>
-          <a class="post-link" href="/natusuiei.html">
-            夏休み水泳のコーチ募集！
-          </a>
-        </h3></li></ul>
-    <ul class="post-list"><li><span class="post-meta">Nov 4, 2020</span>
-        <h3>
-          <a class="post-link" href="/shoudokutetudai.html">
-            小学校の消毒のお手伝い募集
-          </a>
-        </h3></li></ul>
+      <section id="news" class="section-gray">
+        <div class="section-contents">
+          <h2>MENU</h2>
+          <p class="caption">一覧</p>
+          <div class="flex x-scroll">
+          {% for post in site.categories.news %}
+            {% include articles.html %}
+          {% endfor %}
+          </div>
+        </div>
+      </section>
       </div>
     </main><footer class="site-footer h-card">
+
   <data class="u-url" href="/"></data>
+
+  <section id="contactme" class="section-white">
+    <div class="section-contents">
+      <h2>CONTACT</h2>
+      <p class="caption">お問い合わせ</p>
+      <a href="https://forms.gle/LGVqNcojyVPvBfqP9" class="button" target="_blank" rel="noopener">フォームを開く</a>
+    </div>
+  </section>
 
   <div class="wrapper">
 
@@ -63,8 +72,10 @@
           <li class="p-name">ボランティア</li><li><a class="u-email" href="mailto:koichimuram@gmail.com">koichimuram@gmail.com</a></li></ul>
       </div>
 
+
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/koichi0702"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">koichi0702</span></a></li><li><a href="https://www.twitter.com/koichi72love"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">koichi72love</span></a></li></ul>
 </div>
+
     </div>
     </div>
 

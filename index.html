@@ -38,17 +38,17 @@
         <div class="home"><h1>ボランティア募集ページ</h1>
 <h2 class="post-list-heading">一覧</h2>
     <ul class="post-list"><li><span class="post-meta">Nov 4, 2020</span>
-        <h3>
-          <a class="post-link" href="/natusuiei.html">
-            夏休み水泳のコーチ募集！
-          </a>
-        </h3></li></ul>
-    <ul class="post-list"><li><span class="post-meta">Nov 4, 2020</span>
-        <h3>
-          <a class="post-link" href="/shoudokutetudai.html">
-            小学校の消毒のお手伝い募集
-          </a>
-        </h3></li></ul>
+      <section id="news" class="section-gray">
+        <div class="section-contents">
+          <h2>MENU</h2>
+          <p class="caption">一覧</p>
+          <div class="flex x-scroll">
+          {% for post in site.categories.news %}
+            {% include articles.html %}
+          {% endfor %}
+          </div>
+        </div>
+      </section>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
